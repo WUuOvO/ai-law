@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringAi_ai_test implements CommandLineRunner {
     @Resource
-    private ChatModel deepseekmodel;
+    private ChatModel deepseekChatmodel;
 
     @Override
     public void run(String... args) throws Exception {
-        AssistantMessage message = deepseekmodel.call(new Prompt("你好，你是什么模型"))
+        AssistantMessage message = deepseekChatmodel.call(new Prompt("你好，你是什么模型"))
                 .getResult()
                 .getOutput();
         System.out.println(message.getText());
