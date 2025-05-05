@@ -18,9 +18,5 @@ public class SpringAi_ai_test implements CommandLineRunner {
                 .getResult()
                 .getOutput();
         System.out.println(message.getText());
-        System.out.println("wgh");
-        System.out.println("wgh master");
-        System.out.println("wgh hot-fix");
-         System.out.println("wgh github");
     }
 }
